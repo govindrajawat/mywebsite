@@ -6,11 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sachin Singh Rajpoot Website.</title>
 	<link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/second.css">
+  <link rel="stylesheet" href="dark/assets/css/icofont.css"/>
 	<link rel="icon" href="favicon-32x32.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <header>
 <nav>
@@ -94,12 +97,17 @@ home
     
     <a class="button" href="mailto:sachinsinghrajpoot622@gmail.com">CONTACT ME</a> 
   </div>
+
   <div class="bottom-container">
-		<a class="footer-link" href="https://www.linkedin.com/in/sachin28dec">LinkedIn</a>
-		<a class="footer-link" href="https://github.com/singhsach-in">Github</a>
-		<a class="footer-link" href="https://www.facebook.com/profile.php?id=100011591588136">Facebook</a>
+    <div class="psSocial">
+      <a href="https://www.facebook.com/profile.php?id=100011591588136" target="_blank" class="fac"><i class="icofont-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" class="twi"><i class="icofont-twitter"></i></a>
+      <a href=https://github.com/singhsach-in" target="_blank" class="dri"><i class="icofont-github"></i></a>
+      <a href="https://www.linkedin.com/in/sachin28dec" target="_blank" class="ins"><i class="icofont-linkedin"></i></a>
+  </div>
 		<p>© Sachin Singh Rajpoot.</p>
-	  </div>
+  </div>
+
 </section>
 
 
@@ -115,6 +123,7 @@ $(() => {
     windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
     windowTop > 100 ? $('ul').css('top', '100px') : $('ul').css('top', '160px');
   });
+
 
   //Click Logo To Scroll To Top
   $('#logo').on('click', () => {
